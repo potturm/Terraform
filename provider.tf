@@ -8,9 +8,5 @@ terraform {
 }
 
 provider "aws" {
-    region = "us-east-1"
-   
-   
-    # Access Key and secret key can be configured here , but due to security reasons and malicious attacks
-    # we have to configure it in our local.
+  region = "us-east-1"
 }
