@@ -11,7 +11,7 @@ variable "instance_type" {
     default = "t2.micro"
 }
 
-variable "sg_name"
+variable "sgname"
 {
     type = string
     default = "allow-all"
