@@ -5,8 +5,8 @@ resource "aws_security_group" "allow-all" {
 
   ingress {
     description      = "TLS from VPC"
-    from_port        = 0
-    to_port          = 0
+    from_port        = var.fromport
+    to_port          = 0  # Number 
     protocol         = "tcp"
     cidr_blocks      = var.cidr_name
   }

@@ -17,6 +17,17 @@ variable "sgname" {
 
 }
 
+# Existing seurity groups to access using variables 
+
+variable "security_groups" {
+  default = "sg-0c073e53ae7f28d87"
+}
+
+variable "fromport"{
+    type = number
+    default = 0
+}
+
 variable "cidr_name" {
     type = list
     default = ["0.0.0.0/0"]
